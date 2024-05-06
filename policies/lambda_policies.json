@@ -1,0 +1,30 @@
+### Trust Policy
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "lambda.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
+
+### Permission Policy
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "ram:GetResourceShares",
+                "ram:GetResourceShareInvitations"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
